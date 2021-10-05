@@ -31,9 +31,8 @@ list.
 
 My reading list should have ended here. But it does not. Thanks to J.
 Bradford Delong's [The Strange Death of Conservative
-America](https:r//www.project-syndicate.org/commentary/republican-party-strange-death-american-conservatism-by-j-bradford-delong-2021-10).
-From here, I have learnt more books. The first one is Geoffrey
-Kabaservice's [Rule and
+America](https://prosyn.org/RAIzwNl). From here, I have learnt more books. The 
+first one is Geoffrey Kabaservice's [Rule and
 Ruin](https://global.oup.com/academic/product/rule-and-ruin-9780199768400).
 It is about the history of modern America. I haven't read it so I could
 be wrong. The second one is Steven Levitsky and Daniel Ziblatt's [How
