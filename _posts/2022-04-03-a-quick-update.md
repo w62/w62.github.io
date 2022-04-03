@@ -1,6 +1,6 @@
 ---
 layout: post
-title: a quick update`
+title: a quick update
 
 date: 2022-04-03 18:15:00 +0800
 categories: post
