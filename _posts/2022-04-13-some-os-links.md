@@ -14,6 +14,6 @@ categories: post
 
 [Writing a simple operation from scratch (2010)](https://news.ycombinator.com/item?id=8380822)
 
-[Writing a Simple Operating System - from Scratch(https://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf)
+[Writing a Simple Operating System - from Scratch](https://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf)
 
 [2015-16 lecture notes](https://www.cs.bham.ac.uk/~exr/lectures/opsys/15_16/lectures/)
