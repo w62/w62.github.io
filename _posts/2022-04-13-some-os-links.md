@@ -17,3 +17,8 @@ categories: post
 [Writing a Simple Operating System - from Scratch](https://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf)
 
 [2015-16 lecture notes](https://www.cs.bham.ac.uk/~exr/lectures/opsys/15_16/lectures/)
+
+[cs4118 System/Kernel Dev Guides](https://cs4118.github.io/dev-guides/)
+
+[Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
+
