@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A couple of things
-date: 2022-06-21 14:00 +800
+date: 2022-06-21 14:00:00 +0800
 categories: post
 
 ---
