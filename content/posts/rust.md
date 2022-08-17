@@ -37,5 +37,4 @@ Here are some Rust links that I found useful:
 
 [Creative Projects for Rust Programmers](https://www.packtpub.com/product/creative-projects-for-rust-programmers/9781789346220)
 
-
-
+[rust-starter-pack](https://opheron.github.io/rust-starter-pack/)
