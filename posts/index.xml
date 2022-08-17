@@ -17,7 +17,15 @@ The Book
 This week in Rust
 The Embedded Working Group Newletter
 Rust OSDev
-Rust GameDev WG</description></item><item><title>中文</title><link>https://tech.freepackets.net/posts/2022-04-04-chinese/</link><pubDate>Mon, 04 Apr 2022 21:45:00 +0800</pubDate><guid>https://tech.freepackets.net/posts/2022-04-04-chinese/</guid><description>這回是試試，看寫中文的效果如何。暫時看來，好像還可以，但是，英文的一些文字處理方式，就不行了。但有一個好處，就是兩邊可以控制的很好，不用像英文一般，遷就得比較辛苦。
+Rust GameDev WG
+egghead.io rust
+Chris Biscardi&amp;rsquo;s walkthrough of Rustlings
+exercism
+serokell
+ripgrep
+Coding game
+Exercises for Programmers
+Creative Projects for Rust Programmers</description></item><item><title>中文</title><link>https://tech.freepackets.net/posts/2022-04-04-chinese/</link><pubDate>Mon, 04 Apr 2022 21:45:00 +0800</pubDate><guid>https://tech.freepackets.net/posts/2022-04-04-chinese/</guid><description>這回是試試，看寫中文的效果如何。暫時看來，好像還可以，但是，英文的一些文字處理方式，就不行了。但有一個好處，就是兩邊可以控制的很好，不用像英文一般，遷就得比較辛苦。
 我也不介意，能寫就好。再往下寫多兩個字，或兩行，看看感覺會是怎樣。目的不多，起碼這一篇就只是試試水溫而已。</description></item><item><title>a quick update</title><link>https://tech.freepackets.net/posts/2022-04-03-a-quick-update/</link><pubDate>Sun, 03 Apr 2022 18:15:00 +0800</pubDate><guid>https://tech.freepackets.net/posts/2022-04-03-a-quick-update/</guid><description>OK, this is a quick update. I have somehow got a new M1 mac, which is quite good, and I am writing it with it now.
 But it seems that my new neovim setup needs further polishing. I will work on it.
 Until next time.</description></item><item><title>some os courses</title><link>https://tech.freepackets.net/posts/2021-12-14-some-os-courses/</link><pubDate>Tue, 14 Dec 2021 22:40:00 +0800</pubDate><guid>https://tech.freepackets.net/posts/2021-12-14-some-os-courses/</guid><description>Computer Systems from the Ground Up
@@ -27,16 +35,7 @@ The technical books are related to hard skills such as Rust, TerminusDB etc. The
 Rust is purely a personal hobby. It is the most liked language in stack overflow, so must be something that can have a closer look. I have grasped around 20% of it so far.</description></item><item><title>Astr0 Baby</title><link>https://tech.freepackets.net/posts/2021-09-09-astr0-baby/</link><pubDate>Thu, 09 Sep 2021 09:50:00 +0800</pubDate><guid>https://tech.freepackets.net/posts/2021-09-09-astr0-baby/</guid><description>He is a guy quite into virtualisation of old systems. Recently he played with qemu on M1 Apple. Below are some of his internet presences.
 His Twitter
 His blog
-His another blog</description></item><item><title>rust</title><link>https://tech.freepackets.net/posts/2021-09-08-rust/</link><pubDate>Wed, 08 Sep 2021 15:50:00 +0800</pubDate><guid>https://tech.freepackets.net/posts/2021-09-08-rust/</guid><description>Here are some web sites:
-egghead.io rust
-[Chris Biscardi&amp;rsquo;s walkthrough of Rustlings](https://egghead.io/courses/ learning-rust-by-solving-the-rustlings-exercises-a722)
-exercism
-serokell
-ripgrep
-Coding game
-Below are some books:
-Exercises for Programmers
-Creative Projects for Rust Programmers</description></item><item><title>Brian Anderson</title><link>https://tech.freepackets.net/posts/2021-09-08-brian-andersion/</link><pubDate>Wed, 08 Sep 2021 11:30:00 +0800</pubDate><guid>https://tech.freepackets.net/posts/2021-09-08-brian-andersion/</guid><description>His Site
+His another blog</description></item><item><title>Brian Anderson</title><link>https://tech.freepackets.net/posts/2021-09-08-brian-andersion/</link><pubDate>Wed, 08 Sep 2021 11:30:00 +0800</pubDate><guid>https://tech.freepackets.net/posts/2021-09-08-brian-andersion/</guid><description>His Site
 His company PingCAP
 His blog on Solana
 Solana</description></item><item><title>test</title><link>https://tech.freepackets.net/posts/2021-08-04-test/</link><pubDate>Wed, 04 Aug 2021 22:30:00 +0800</pubDate><guid>https://tech.freepackets.net/posts/2021-08-04-test/</guid><description>Just some testing from forestry.io to create my new post. There are some spell checks.
