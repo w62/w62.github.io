@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>William's site</title><link>https://tech.freepackets.net/</link><description>Recent content on William's site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 16 Aug 2022 12:12:03 +0800</lastBuildDate><atom:link href="https://tech.freepackets.net/index.xml" rel="self" type="application/rss+xml"/><item><title>some logos</title><link>https://tech.freepackets.net/posts/2022-08-16-12-12-03/</link><pubDate>Tue, 16 Aug 2022 12:12:03 +0800</pubDate><guid>https://tech.freepackets.net/posts/2022-08-16-12-12-03/</guid><description>Here are some logos about Linux and Rust.
+Tux
+Ferris
+Rust cogwheel</description></item><item><title>Test Title</title><link>https://tech.freepackets.net/posts/2022-06-22-15-26-43/</link><pubDate>Wed, 22 Jun 2022 15:26:43 +0800</pubDate><guid>https://tech.freepackets.net/posts/2022-06-22-15-26-43/</guid><description>Some contents. 還有一些中文。</description></item><item><title>A couple of things</title><link>https://tech.freepackets.net/posts/2022-06-21-01/</link><pubDate>Tue, 21 Jun 2022 14:00:00 +0800</pubDate><guid>https://tech.freepackets.net/posts/2022-06-21-01/</guid><description>Just a list of things that I want to foused on recently.
+Web3 NFT Blockchain Linux kernel Rust in Linux kernel Quantum Mechanics</description></item><item><title>some os links</title><link>https://tech.freepackets.net/posts/2022-04-13-some-os-links/</link><pubDate>Wed, 13 Apr 2022 11:50:00 +0800</pubDate><guid>https://tech.freepackets.net/posts/2022-04-13-some-os-links/</guid><description>6.S081 xv6
+Emulate RISC-V on a Raspberry Pi
+Creating an OS from scratch
+Writing a simple operation from scratch (2010)
+Writing a Simple Operating System - from Scratch
+2015-16 lecture notes
+cs4118 System/Kernel Dev Guides
+Operating Systems: Three Easy Pieces</description></item><item><title>some Rust links</title><link>https://tech.freepackets.net/posts/2022-04-13-some-rust-links/</link><pubDate>Wed, 13 Apr 2022 08:15:00 +0800</pubDate><guid>https://tech.freepackets.net/posts/2022-04-13-some-rust-links/</guid><description>Here are some Rust links that I found useful:
+The user forum
+The Book
+This week in Rust
+The Embedded Working Group Newletter
+Rust OSDev
+Rust GameDev WG</description></item><item><title>中文</title><link>https://tech.freepackets.net/posts/2022-04-04-chinese/</link><pubDate>Mon, 04 Apr 2022 21:45:00 +0800</pubDate><guid>https://tech.freepackets.net/posts/2022-04-04-chinese/</guid><description>這回是試試，看寫中文的效果如何。暫時看來，好像還可以，但是，英文的一些文字處理方式，就不行了。但有一個好處，就是兩邊可以控制的很好，不用像英文一般，遷就得比較辛苦。
+我也不介意，能寫就好。再往下寫多兩個字，或兩行，看看感覺會是怎樣。目的不多，起碼這一篇就只是試試水溫而已。</description></item><item><title>a quick update</title><link>https://tech.freepackets.net/posts/2022-04-03-a-quick-update/</link><pubDate>Sun, 03 Apr 2022 18:15:00 +0800</pubDate><guid>https://tech.freepackets.net/posts/2022-04-03-a-quick-update/</guid><description>OK, this is a quick update. I have somehow got a new M1 mac, which is quite good, and I am writing it with it now.
+But it seems that my new neovim setup needs further polishing. I will work on it.
+Until next time.</description></item><item><title>some os courses</title><link>https://tech.freepackets.net/posts/2021-12-14-some-os-courses/</link><pubDate>Tue, 14 Dec 2021 22:40:00 +0800</pubDate><guid>https://tech.freepackets.net/posts/2021-12-14-some-os-courses/</guid><description>Computer Systems from the Ground Up
+CS140e - Pi OS with Rust</description></item><item><title>my reading list</title><link>https://tech.freepackets.net/posts/2021-10-05-my-reading-list/</link><pubDate>Tue, 05 Oct 2021 22:40:00 +0800</pubDate><guid>https://tech.freepackets.net/posts/2021-10-05-my-reading-list/</guid><description>The good news is I have finished Richard Hass&amp;rsquo;s The World. The bad news is that I have started his previous book A World in Disarray. This one is more or less focused on foreign affairs.
+After I have completed the World, I was at an unease. I have finished the book, but the carving for reading, for more, remains. I briefly read Peril. But quickly realized that it is more or less a vent of the Trump administration.</description></item><item><title>books I read</title><link>https://tech.freepackets.net/posts/2021-09-28-books-i-read/</link><pubDate>Tue, 28 Sep 2021 20:50:00 +0800</pubDate><guid>https://tech.freepackets.net/posts/2021-09-28-books-i-read/</guid><description>Recently I have tried to read more than one book. I divided them into two categories: technical and non-technical. Technical are those related to computer while non-technical are the rest. It could be fiction as well as non-fiction.
+The technical books are related to hard skills such as Rust, TerminusDB etc. The contents are imperative and straight forward. There are many books on Rust, for example. The version of Rust might be a little bit different, but the language itself won&amp;rsquo;t change.</description></item><item><title>blockchain</title><link>https://tech.freepackets.net/posts/2021-09-10-blockchain/</link><pubDate>Fri, 10 Sep 2021 23:50:00 +0800</pubDate><guid>https://tech.freepackets.net/posts/2021-09-10-blockchain/</guid><description>From here, I have learnt about Decentraland and earth2. Those are new metaverses based on blockchain - particular Ethereum. I will learn about Ethereum, but now I need to sort out Rust and Python. These languages are of a little priority now.
+Rust is purely a personal hobby. It is the most liked language in stack overflow, so must be something that can have a closer look. I have grasped around 20% of it so far.</description></item><item><title>Astr0 Baby</title><link>https://tech.freepackets.net/posts/2021-09-09-astr0-baby/</link><pubDate>Thu, 09 Sep 2021 09:50:00 +0800</pubDate><guid>https://tech.freepackets.net/posts/2021-09-09-astr0-baby/</guid><description>He is a guy quite into virtualisation of old systems. Recently he played with qemu on M1 Apple. Below are some of his internet presences.
+His Twitter
+His blog
+His another blog</description></item><item><title>rust</title><link>https://tech.freepackets.net/posts/2021-09-08-rust/</link><pubDate>Wed, 08 Sep 2021 15:50:00 +0800</pubDate><guid>https://tech.freepackets.net/posts/2021-09-08-rust/</guid><description>Here are some web sites:
+egghead.io rust
+[Chris Biscardi&amp;rsquo;s walkthrough of Rustlings](https://egghead.io/courses/ learning-rust-by-solving-the-rustlings-exercises-a722)
+exercism
+serokell
+ripgrep
+Coding game
+Below are some books:
+Exercises for Programmers
+Creative Projects for Rust Programmers</description></item><item><title>Brian Anderson</title><link>https://tech.freepackets.net/posts/2021-09-08-brian-andersion/</link><pubDate>Wed, 08 Sep 2021 11:30:00 +0800</pubDate><guid>https://tech.freepackets.net/posts/2021-09-08-brian-andersion/</guid><description>His Site
+His company PingCAP
+His blog on Solana
+Solana</description></item><item><title>test</title><link>https://tech.freepackets.net/posts/2021-08-04-test/</link><pubDate>Wed, 04 Aug 2021 22:30:00 +0800</pubDate><guid>https://tech.freepackets.net/posts/2021-08-04-test/</guid><description>Just some testing from forestry.io to create my new post. There are some spell checks.
+看看中文可不可以。</description></item><item><title>Welcome to Jekyll!</title><link>https://tech.freepackets.net/posts/2021-08-04-welcome-to-jekyll/</link><pubDate>Wed, 04 Aug 2021 21:39:22 +0800</pubDate><guid>https://tech.freepackets.net/posts/2021-08-04-welcome-to-jekyll/</guid><description>You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.
+Jekyll requires blog post files to be named according to the following format:
+YEAR-MONTH-DAY-title.MARKUP
+Where YEAR is a four-digit number, MONTH and DAY are both two-digit numbers, and MARKUP is the file extension representing the format used in the file.</description></item></channel></rss>
