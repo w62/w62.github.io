@@ -1,0 +1,4 @@
+baseURL = 'https://tech.freepackets.net/'
+languageCode = 'en-us'
+title = "William's site"
+theme = "ananke"
