@@ -1,3 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://tech.freepackets.net/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = "William's site"
+theme = "ananke"
