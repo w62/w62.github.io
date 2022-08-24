@@ -1,5 +1,4 @@
 ---
-layout: post
 title: some Rust links
 
 date: 2022-04-13 08:15:00 +0800
