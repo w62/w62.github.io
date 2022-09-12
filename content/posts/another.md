@@ -8,7 +8,7 @@ draft: false
 
 Yet another message. 這是另一篇。
 
-![](media/16629087167819/16629087592554.jpg)
+![](/images/16629087592554.jpg)
 
 
 這可是另一篇啊。
