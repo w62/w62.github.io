@@ -5,7 +5,7 @@ draft: false
 ---
 These are my gears.
 
-[](https://i.imgur.com/0v2iBhk.jpg)
+![](https://i.imgur.com/0v2iBhk.jpg)
 
 On the top is my M2 Macbook Air with which I am writing this blog. Below it is my M1 14-inch macbook Pro.
 
