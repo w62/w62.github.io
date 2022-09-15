@@ -83,3 +83,7 @@ theme = "minimal-bootstrap-hugo-theme"
   [markup.tableOfContents]
     endLevel = 6
     startLevel = 2
+
+
+[security.exec]
+allow = ["^asciidoctor$"]
