@@ -44,6 +44,10 @@ theme = "minimal-bootstrap-hugo-theme"
   name = "About"
   url = "/about/"
   weight = 3
+  [[menu.nav]]
+  name = "docs"
+  url = "/docs/"
+  weight = 4
 #  [[menu.nav]]
 #  name = "RSS"
 #  url = "/index.xml"
