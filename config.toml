@@ -2,13 +2,15 @@ baseURL = "https://blog.freepackets.net/"
 languageCode = "en-us"
 title = "William's site"
 theme = "minimal-bootstrap-hugo-theme"
+sectionPagesMenu = "main"
 
 [taxonomies]
   tag = "tags"
   category = "categories"
+  language = "languages"
 
 [permalinks]
-  post = "/:filename/"
+  posts = "/:year/:month/:day/:filename/"
 
 [params]
   description = "Some description"
@@ -34,7 +36,7 @@ theme = "minimal-bootstrap-hugo-theme"
 [menu]
   [[menu.nav]]
   name = "Posts"
-  url = "/"
+  url = "/posts/"
   weight = 1
   [[menu.nav]]
   name = "Tags"
@@ -45,8 +47,8 @@ theme = "minimal-bootstrap-hugo-theme"
   url = "/about/"
   weight = 3
   [[menu.nav]]
-  name = "docs"
-  url = "/docs/"
+  name = "Categories"
+  url = "/categories/"
   weight = 4
 #  [[menu.nav]]
 #  name = "RSS"
@@ -87,3 +89,4 @@ theme = "minimal-bootstrap-hugo-theme"
 
 [security.exec]
 allow = ["^asciidoctor$"]
+
