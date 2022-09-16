@@ -5,8 +5,7 @@ date: "2014-04-09"
 
 ## This Theme
 
-Thanks for visiting [this theme](https://themes.gohugo.io/themes/minimal-bootstrap-hugo-theme/) demo. If you're interested, checkout my other stuff over at <https://zwbetz.com>
-
+The theme is [based on antora](https://github.com/basil/antora-default-ui-hugo-theme)
 ## Hugo
 
 Hugo is the **world’s fastest framework for building websites**. It is written in Go.

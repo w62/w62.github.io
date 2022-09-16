@@ -1,9 +1,6 @@
 ---
-layout: post
 title: blockchain
 date: 2021-09-10 23:50:00 +0800
-categories: post
-
 ---
 
 [From here](https://www.reuters.com/technology/south-koreas-gen-mz-leads-rush-into-metaverse-2021-09-08/),

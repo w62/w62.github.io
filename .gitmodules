@@ -4,3 +4,6 @@
 [submodule "themes/minimal-bootstrap-hugo-theme"]
 	path = themes/minimal-bootstrap-hugo-theme
 	url = https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme.git
+[submodule "themes/antora-default-ui-hugo-theme"]
+	path = themes/antora-default-ui-hugo-theme
+	url = https://github.com/basil/antora-default-ui-hugo-theme.git

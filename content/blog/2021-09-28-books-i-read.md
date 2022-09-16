@@ -2,8 +2,6 @@
 layout: post
 title: books I read
 date: 2021-09-28 20:50:00 +0800
-categories: post
-
 ---
 
 Recently I have tried to read more than one book. I divided them into

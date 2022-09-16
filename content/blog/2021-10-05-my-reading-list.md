@@ -1,9 +1,6 @@
 ---
-layout: post
 title: my reading list
 date: 2021-10-05 22:40:00 +0800
-categories: post
-
 ---
 
 The good news is I have finished Richard Hass's The World. The bad news
