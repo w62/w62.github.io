@@ -45,11 +45,11 @@ sectionPagesMenu = "main"
   [[menu.nav]]
   name = "About"
   url = "/about/"
-  weight = 3
+  weight = 4
   [[menu.nav]]
   name = "Categories"
   url = "/categories/"
-  weight = 4
+  weight = 3
 #  [[menu.nav]]
 #  name = "RSS"
 #  url = "/index.xml"
@@ -85,7 +85,6 @@ sectionPagesMenu = "main"
   [markup.tableOfContents]
     endLevel = 6
     startLevel = 2
-
 
 [security.exec]
 allow = ["^asciidoctor$"]

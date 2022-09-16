@@ -63,6 +63,20 @@ Here is some texts and some information.
 
 
 == Mydoc 3
+
+Here is Mydoc 3. Below is a NOTE box:
+
+[NOTE]
+.Feeding the Werewolves
+
+====
+This is a note. Please pay extra attention. Be careful:
+
+. a silver bullet
+. a garlic
+. a good hunter
+====
+
 Below is a picture.
 
 
