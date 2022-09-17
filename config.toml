@@ -1,10 +1,10 @@
 baseURL = 'https://blog.freepackets.net/'
 languageCode = 'en-us'
 title = "William's site"
-theme = "ananke"
-#theme = "antora-default-ui-hugo-theme"
+#theme = "ananke"
+theme = "antora-default-ui-hugo-theme"
 
-# sectionPagesMenu = "main"
+sectionPagesMenu = "main"
 
 [security.exec]
 allow = ["^asciidoctor$"]

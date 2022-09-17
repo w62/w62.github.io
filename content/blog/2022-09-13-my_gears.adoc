@@ -5,7 +5,7 @@ draft: false
 ---
 These are my gears.
 
-![](https://i.imgur.com/0v2iBhk.jpg)
+image::https://i.imgur.com/0v2iBhk.jpg[]
 
 On the top is my M2 Macbook Air with which I am writing this blog. Below it is my M1 14-inch macbook Pro.
 
@@ -33,7 +33,7 @@ The M1 is just too heavy to carry around in my backpack. This is the main reason
 
 I need to install some sorts of VPN clients in order to access the intranet. So what web sites that I access might or might not be a concern. So it is better to separate home/work computers. 
 
-The down side of it is that some software are X86 specific, for example the [TerminusDB](https://terminusdb.com/) and the [linux kernel module cheat](https://github.com/cirosantilli/linux-kernel-module-cheat). 
+The down side of it is that some software are X86 specific, for example the https://terminusdb.com/[TerminusDB] and the https://github.com/cirosantilli/linux-kernel-module-cheat[linux kernel module cheat]. 
 
-Yet nothing is perfect, right? Things will be migrated to the aarch64, it is only a matter of time. If there is really a need for X86, [Proxmox](https://www.proxmox.com/) could be a solution. Let's see.
+Yet nothing is perfect, right? Things will be migrated to the aarch64, it is only a matter of time. If there is really a need for X86,  https://www.proxmox.com/[Proxmox] could be a solution. Let's see.
 
