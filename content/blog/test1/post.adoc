@@ -1,0 +1,18 @@
++++
+title = "Post"
+date = 2022-09-19T00:45:16+08:00
+draft = false
+categories = []
+tags = []
++++
+
+= Test
+
+== Section 1
+
+some text
+
+image::/blog/test1/heavy-load.png[]
+
+
+test
