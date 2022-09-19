@@ -9,3 +9,16 @@ Just a list of things that I want to foused on recently.
 - Linux kernel 
 - Rust in Linux kernel
 - Quantum Mechanics  
+
+
+{{<mermaid>}}
+    flowchart TD;
+
+        A-->B;
+        A-->C;
+
+        B<--test-->D;
+
+        C--to-->D;
+        D--from-->C;
+{{</mermaid>}}
