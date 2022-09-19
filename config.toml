@@ -2,13 +2,8 @@ baseURL = 'https://blog.freepackets.net/'
 languageCode = 'en-us'
 title = "William's site"
 #theme = "ananke"
-<<<<<<< HEAD
-theme = "antora-default-ui-hugo-theme"
-#theme = "smigle"
-=======
 #theme = "antora-default-ui-hugo-theme"
 theme = "hugo-theme-relearn"
->>>>>>> 5f3a174f4c5cffba9a7e846dfea816e9be403c51
 
 sectionPagesMenu = "main"
 
