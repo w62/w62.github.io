@@ -1,8 +1,9 @@
----
-title: "Some routing links"
-date: 2022-09-13T12:58:59+08:00
-draft: false
----
++++
+date = '2022-09-13T12:58:59+08:00'
+draft = false
+title = 'Some routing links'
+
++++
 
 [Getting Started with BIRD Routing Software](https://blog.kintone.io/entry/bird)  
 [Modular, Pure Layer 3 Network for Kubernetes: The Implementation](https://blog.kintone.io/entry/neco/network-implementation)  

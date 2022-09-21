@@ -1,7 +1,8 @@
----
-title: A couple of things
-date: 2022-06-21 14:00:00 +0800
----
++++
+date = '2022-06-21 14:00:00 +0800'
+title = 'A couple of things'
+
++++
 Just a list of things that I want to foused on recently.
 - Web3
 - NFT

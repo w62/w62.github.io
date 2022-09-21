@@ -1,8 +1,9 @@
----
-title: "Ascii Template"
-date: 2022-09-18T00:05:58+08:00
-draft: false
----
++++
+date = '2022-09-18T00:05:58+08:00'
+draft = false
+title = 'Ascii Template'
+
++++
 
 = AsciiDoc Article Title
 Firstname Lastname <author@asciidoctor.org>

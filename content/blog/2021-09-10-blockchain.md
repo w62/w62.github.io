@@ -1,7 +1,8 @@
----
-title: blockchain
-date: 2021-09-10 23:50:00 +0800
----
++++
+date = '2021-09-10 23:50:00 +0800'
+title = 'blockchain'
+
++++
 
 [From here](https://www.reuters.com/technology/south-koreas-gen-mz-leads-rush-into-metaverse-2021-09-08/),
 I have learnt about Decentraland and earth2. Those are new metaverses

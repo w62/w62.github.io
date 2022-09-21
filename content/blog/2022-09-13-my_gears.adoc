@@ -1,8 +1,9 @@
----
-title: "My Gears"
-date: 2022-09-13T18:07:31+08:00
-draft: false
----
++++
+date = '2022-09-13T18:07:31+08:00'
+draft = false
+title = 'My Gears'
+
++++
 These are my gears.
 
 image::https://i.imgur.com/0v2iBhk.jpg[]

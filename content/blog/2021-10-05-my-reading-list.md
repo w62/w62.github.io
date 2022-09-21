@@ -1,7 +1,8 @@
----
-title: my reading list
-date: 2021-10-05 22:40:00 +0800
----
++++
+date = '2021-10-05 22:40:00 +0800'
+title = 'my reading list'
+
++++
 
 The good news is I have finished Richard Hass's The World. The bad news
 is that I have started his previous book [A World in

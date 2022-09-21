@@ -1,8 +1,9 @@
----
-title: "Its an Internet World"
-date: 2022-09-13T12:31:02+08:00
-draft: false
----
++++
+date = '2022-09-13T12:31:02+08:00'
+draft = false
+title = 'Its an Internet World'
+
++++
 
 I am using Byword to write this post now. I create the post with `hugo new <post_name>.md` then edit it with Byword. 
 

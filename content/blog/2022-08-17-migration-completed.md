@@ -1,8 +1,9 @@
----
-title: "Migration Completed"
-date: 2022-08-17T13:50:00+08:00
-draft: false
----
++++
+date = '2022-08-17T13:50:00+08:00'
+draft = false
+title = 'Migration Completed'
+
++++
 
 OK, I have migrated this blog from Jekyll to hugo. It was a very smooth and simple process.
 

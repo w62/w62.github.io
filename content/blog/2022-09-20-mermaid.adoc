@@ -1,8 +1,9 @@
----
-title: "Mermaid in asciidoc"
-date: 2022-09-20T00:16:24+08:00
-draft: false
----
++++
+date = '2022-09-20T00:16:24+08:00'
+draft = false
+title = 'Mermaid in asciidoc'
+
++++
 
 
 {{<mermaid>}}

@@ -1,7 +1,8 @@
----
-title: Brian Anderson
-date: 2021-09-08 11:30:00 +0800
----
++++
+date = '2021-09-08 11:30:00 +0800'
+title = 'Brian Anderson'
+
++++
 
 [His Site](https://brson.github.io/)
 

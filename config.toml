@@ -3,7 +3,9 @@ languageCode = 'en-us'
 title = "William's site"
 #theme = "ananke"
 #theme = "antora-default-ui-hugo-theme"
-theme = "hugo-theme-relearn"
+#theme = "hugo-theme-relearn"
+#theme = "cupper-hugo-theme"
+theme = "smol"
 
 sectionPagesMenu = "main"
 
@@ -18,3 +20,9 @@ allow = ["^asciidoctor$"]
   [markup.highlight]
     # Disable Goldmark Chroma syntax highlighter
     codeFences = false
+
+[menu]
+  [[menu.main]]
+        identifier = 'blog'
+        name = 'my blog'
+        url = '/blog/'

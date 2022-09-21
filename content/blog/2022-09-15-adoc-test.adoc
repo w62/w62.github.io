@@ -1,8 +1,9 @@
----
-title: "asciidoc Test"
-date: 2022-09-15T13:53:58+08:00
-draft: false
----
++++
+date = '2022-09-15T13:53:58+08:00'
+draft = false
+title = 'asciidoc Test'
+
++++
 
 = Header
 :source-highlighter: rouge
