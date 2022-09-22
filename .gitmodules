@@ -22,3 +22,9 @@
 [submodule "mero"]
 	path = mero
 	url = https://github.com/darshanbaral/mero.git
+[submodule "themes/simple-style"]
+	path = themes/simple-style
+	url = https://github.com/yanlinlin82/simple-style
+[submodule "themes/bare"]
+	path = themes/bare
+	url = https://github.com/orf/bare-hugo-theme.git

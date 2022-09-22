@@ -6,12 +6,15 @@ title = "William's site"
 #theme = "hugo-theme-relearn"
 #theme = "cupper-hugo-theme"
 theme = "smol"
-#theme = "mero"
+#theme = "bare"
 
 sectionPagesMenu = "main"
 
+[params]
+mainSections = ["blog"]
+postcss = true
 [security.exec]
-allow = ["^asciidoctor$"]
+allow = ["^asciidoctor$", "^npx$"]
 
 [markup]
   [markup.asciidocext]
