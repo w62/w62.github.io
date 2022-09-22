@@ -6,6 +6,7 @@ title = "William's site"
 #theme = "hugo-theme-relearn"
 #theme = "cupper-hugo-theme"
 theme = "smol"
+#theme = "mero"
 
 sectionPagesMenu = "main"
 
