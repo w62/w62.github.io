@@ -19,3 +19,6 @@
 [submodule "themes/smol"]
 	path = themes/smol
 	url = https://github.com/colorchestra/smol
+[submodule "mero"]
+	path = mero
+	url = https://github.com/darshanbaral/mero.git
