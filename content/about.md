@@ -4,9 +4,10 @@ title = 'About'
 
 +++
 
+I have got another blog [🦀](https://crab.freepackets.net/). It is a [mdbook](https://rust-lang.github.io/mdBook/) based blog.
 ## This Theme
 
-The theme is [based on antora](https://github.com/basil/antora-default-ui-hugo-theme)
+The theme is [smol](https://github.com/colorchestra/smol)
 ## Hugo
 
 Hugo is the **world’s fastest framework for building websites**. It is written in Go.

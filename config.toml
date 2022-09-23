@@ -10,6 +10,8 @@ theme = "smol"
 
 sectionPagesMenu = "main"
 
+copyright = "william"
+
 [params]
 mainSections = ["blog"]
 postcss = true
@@ -30,3 +32,10 @@ allow = ["^asciidoctor$", "^npx$"]
         identifier = 'blog'
         name = 'my blog'
         url = '/blog/'
+		weight = 10
+
+  [[menu.main]]
+        identifier = 'about'
+        name = 'about'
+        url = '/about/'
+		weight = 20
