@@ -39,3 +39,9 @@ allow = ["^asciidoctor$", "^npx$"]
         name = 'about'
         url = '/about/'
 		weight = 20
+
+  [[menu.main]]
+        identifier = 'rustlings'
+        name = 'rustlings'
+        url = 'https://blog.freepackets.net/rustlings/'
+		weight = 20
