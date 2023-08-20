@@ -19,4 +19,4 @@ And here is a list of my job objectives
 2. Juniper
 3. Nokia
 
-The document format is markdown. The directory s
+The document format is markdown.
