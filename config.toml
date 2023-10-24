@@ -40,8 +40,3 @@ allow = ["^asciidoctor$", "^npx$"]
         url = '/about/'
 		weight = 20
 
-  [[menu.main]]
-        identifier = 'doodles'
-        name = 'doodles'
-        url = '/doodles/'
-		weight = 30

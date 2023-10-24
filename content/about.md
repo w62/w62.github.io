@@ -3,9 +3,8 @@ date = '2014-04-09'
 title = 'About'
 +++
 
-another blogs🦀:  
-- [crab](https://crab.freepackets.net/). It is a [mdbook](https://rust-lang.github.io/mdBook/) based blog.   
-- [rustlings](https://rustlings.freepackets.net). It is blog documenting my progression on [The official rustlings repo](https://github.com/rust-lang/rustlings). 
+another blog:  
+- [doodles](https://doodles.freepackets.net/). A blog about what I have learned today.
 
 
 ## This Theme
