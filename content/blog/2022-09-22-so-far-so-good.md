@@ -6,8 +6,6 @@ draft: false
 
 In the last a couple of days, I have been researching about writing in [markdown](https://www.markdownguide.org/) and [asciidoc](https://asciidoc.org/). The general approach is to get the respective toolchain working, then find a hosting site.
 
-I now ended up with two blogs. This very one that you are reading and another [asciidoc](https://adoc.freepackets.net/). 
-
 My ultimate goal is to have a blog that supports
 
 - markdown  
