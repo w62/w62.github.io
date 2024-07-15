@@ -6,6 +6,8 @@ title = 'About'
 another blog:  
 - [doodles](https://doodles.freepackets.net/). A blog about what I have learned today.
 
+- [crab](https://crab.freepackets.net). Yet another blog about Rust.
+
 
 ## This Theme
 
