@@ -1,8 +1,7 @@
 <!doctype html><html lang=en-us><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="IE=edge"><style type=text/css>body{font-family:monospace}</style><title>With Typora</title>
 <link rel=stylesheet href=/css/style.css></head><body><header>====================<br>== <a href=https://blog.freepackets.net/>William's site</a> ==<br>====================<div style=float:right></div><br><p><nav><a href=/><b>Home</b></a>.
 <a href=/blog/><b>my blog</b></a>.
-<a href=/about/><b>about</b></a>.
-<a href=/about/><b>About</b></a>.</nav></p></header><main><article><h1>With Typora</h1><b><time>2022-09-13 00:35:21</time></b><div><p>This is my first hugo post written with Typoa. My environment is setup up according to <a href=https://medium.com/@ardianta/writing-using-typora-on-hugo-based-blog-a1be8500774a>this post</a>.</p><p>The <code>layouts/_default/_markup/render-image.html</code> mentioned in the post is like below:</p><pre><code>{{ if in .Destination &quot;/static/&quot; }}
+<a href=/about/><b>about</b></a>.</nav></p></header><main><article><h1>With Typora</h1><b><time>2022-09-13 00:35:21</time></b><div><p>This is my first hugo post written with Typoa. My environment is setup up according to <a href=https://medium.com/@ardianta/writing-using-typora-on-hugo-based-blog-a1be8500774a>this post</a>.</p><p>The <code>layouts/_default/_markup/render-image.html</code> mentioned in the post is like below:</p><pre><code>{{ if in .Destination &quot;/static/&quot; }}
 &lt;!-- 12 is count of ../../static carachers --&gt;
 {{ $new_file_path := substr .Destination 12 }}
 &lt;!-- just for testing, you can delete this pre tag --&gt;
@@ -12,4 +11,4 @@
 {{ else }}
 &lt;img class=&quot;img-fluid&quot; src=&quot;{{ .Destination }}&quot; alt='{{ .Text }}' /&gt;
 {{ end }}
-</code></pre></div></article></main><aside><div><div><h3>LATEST POSTS</h3></div><div><ul><li><a href=/blog/2022-09-23-one-more-thing/>One More Thing</a></li><li><a href=/blog/2022-09-22-so-far-so-good/>So Far So Good</a></li><li><a href=/blog/2022-09-19-mermaid-at-last/>Mermaid at Last</a></li><li><a href=/blog/2022-09-16-why-i-use-hugo/>Why I Use Hugo</a></li><li><a href=/blog/2022-09-13-my_gears/>My Gears</a></li></ul></div></div></aside><footer><p>&copy; 2024 <a href=https://blog.freepackets.net/><b>william</b></a>.</p></footer></body></html>
+</code></pre></div></article></main><aside><div><div><h3>LATEST POSTS</h3></div><div><ul><li><a href=/blog/2024-07-15-write-something/>Write Something</a></li><li><a href=/blog/2022-09-23-one-more-thing/>One More Thing</a></li><li><a href=/blog/2022-09-22-so-far-so-good/>So Far So Good</a></li><li><a href=/blog/2022-09-19-mermaid-at-last/>Mermaid at Last</a></li><li><a href=/blog/2022-09-16-why-i-use-hugo/>Why I Use Hugo</a></li></ul></div></div></aside><footer><p>&copy; 2024 <a href=https://blog.freepackets.net/><b>william</b></a>.</p></footer></body></html>
