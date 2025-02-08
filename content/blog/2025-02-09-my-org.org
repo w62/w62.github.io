@@ -14,5 +14,3 @@ To buy:
    + Mozzarella
 
 [[https://orgmode.org][a nice website]]
-[[file:~/Pictures/dank-meme.png]]
-[[earlier heading][an earlier heading in the document]]
