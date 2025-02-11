@@ -1,24 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>William's site</title><link>https://blog.freepackets.net/</link><description>Recent content on William's site</description><generator>Hugo</generator><language>en-us</language><copyright>william</copyright><lastBuildDate>Sun, 09 Feb 2025 01:05:40 +0800</lastBuildDate><atom:link href="https://blog.freepackets.net/index.xml" rel="self" type="application/rss+xml"/><item><title>2025 02 09 My Org</title><link>https://blog.freepackets.net/blog/2025-02-09-my-org/</link><pubDate>Sun, 09 Feb 2025 01:05:40 +0800</pubDate><guid>https://blog.freepackets.net/blog/2025-02-09-my-org/</guid><description>&lt;p>
-Hello&lt;/p>
-&lt;p>
-To buy:&lt;/p>
-&lt;ol>
-&lt;li>Milk&lt;/li>
-&lt;li>
-&lt;p>Eggs&lt;/p>
-&lt;ul>
-&lt;li>Organic&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>Cheese&lt;/p>
-&lt;ul>
-&lt;li>Parmesan&lt;/li>
-&lt;li>Mozzarella&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol>
-&lt;p>&lt;a href="https://orgmode.org">a nice website&lt;/a>&lt;/p></description></item><item><title>2024 10 28 My Adoc Test</title><link>https://blog.freepackets.net/blog/2024-10-28-my-adoc-test/</link><pubDate>Mon, 28 Oct 2024 21:17:22 +0800</pubDate><guid>https://blog.freepackets.net/blog/2024-10-28-my-adoc-test/</guid><description>&lt;div class="sect1">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>William's site</title><link>https://blog.freepackets.net/</link><description>Recent content on William's site</description><generator>Hugo</generator><language>en-us</language><copyright>william</copyright><lastBuildDate>Tue, 11 Feb 2025 22:37:55 +0800</lastBuildDate><atom:link href="https://blog.freepackets.net/index.xml" rel="self" type="application/rss+xml"/><item><title>Emacs</title><link>https://blog.freepackets.net/blog/2025-02-11-emacs/</link><pubDate>Tue, 11 Feb 2025 22:37:55 +0800</pubDate><guid>https://blog.freepackets.net/blog/2025-02-11-emacs/</guid><description>&lt;p>I am writing something again. The last two years have been rough for me. Ups and downs, changes in the family etc. Now I have got enough time to write about something.&lt;/p>
+&lt;p>I would like to write about &lt;a href="https://www.gnu.org/software/emacs/">emacs&lt;/a>. I am writing this post in vanilla emacs configuration. Even spell-check is not working properly. I am doing this in a terminal, on a mac. There are a lots of alternatives such as &lt;a href="https://www.bywordapp.com/">byword&lt;/a>. Why I am torturing myself with a 40-year old text based software?&lt;/p></description></item><item><title>2024 10 28 My Adoc Test</title><link>https://blog.freepackets.net/blog/2024-10-28-my-adoc-test/</link><pubDate>Mon, 28 Oct 2024 21:17:22 +0800</pubDate><guid>https://blog.freepackets.net/blog/2024-10-28-my-adoc-test/</guid><description>&lt;div class="sect1">
 &lt;h2 id="_first_level_heading">First level heading&lt;/h2>
 &lt;div class="sectionbody">
 &lt;div class="paragraph">
