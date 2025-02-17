@@ -1,0 +1,47 @@
+#+TITLE: emacs
+#+DATE: 2025-02-17T21:58:42+08:00
+#+DRAFT: false
+#+AUTHOR: william
+
+I am writing in emacs org mode again which I quite enjoy doing.
+
+In the last couple of days since CNY, my focus is emacs. I RTFM about
+it, try to use it and even compile from the [[https://git.savannah.gnu.org/cgit/emacs.git][git repo]].
+
+I recalled my memories about the emacs built-in tutorial to gain basic
+keyboard nevigation and editing. Then read about the[[https://www.gnu.org/software/emacs/manual/emacs.html][ manual.]] It is a
+quite an undertaking. I just glanced through it and get most of my
+basic editing tasks done. I am sure that I will come back to it on and
+off.
+
+Then [[https://www.gnu.org/software/emacs/manual/eintr.html][An
+Introduction to Programming in Emacs Lisp]]. It is very basic
+introduction to Emacs Lisp and functional programming in a general
+sense. The reading experience is a small surprise. The author [[https://en.wikipedia.org/wiki/Robert_J._Chassell][Robert
+J. Chassell]] writes the book with a light-hearted humor as he is
+treating the reader as a friend and discuss emacs over the coffee
+table. Unfortunately such a talent is lost in 2017.
+
+After I get started with Lisp, I dig deeper with the [[https://www.gnu.org/software/emacs/manual/elisp.html][Emacs Lisp
+Reference Manual]]. It is even a heavier undertaking. It covers
+essentially each and every aspects about lisp. Again, I have glanced
+through it. The takeaway is that I have a better understanding about
+lambda functions and closures.  I do not completely understand the
+concepts in a crystal clear way but the looming picture is clearer.
+
+Learning emacs is a bit complicated for me. I am somehow at a lost at
+this point. I get started by treating emacs as an editor. Then
+realised that it is in fact a lisp interpreter wrapped with various
+editing functions. It can be learnt as using a collection of lisp
+libraries. If you have used and developed [[https://winworldpc.com/product/dbase/iii-plus-v11][dBase III+, ]]you will see
+what I mean. Each aspect demands knowledge of the other. The typical
+example is that, after learning some of the major lisp functions,
+everything makes sense in the editing keystrokes.  But quickly
+the entire emacs knowledge increases.
+
+Now I tried to take a glimspe of the source code. It is C wrapped with a lots of lisp functions. Things might not progress too much at this front.
+
+While I am foraying into the emacs echo system, I have come aross [[https://lambdaland.org/][Ashton Wiersdorf]]'s webpage. He is a PhD student, a FreeBSD user and most importantly, an emacs user. His blog posts have shed some lights on my journey on emacs and it seems that we have similar mindsets.
+
+Last but not least, this is the emacs I am using:
+[[/images/emacs-31.jpg]]
