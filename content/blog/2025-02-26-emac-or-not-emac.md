@@ -1,7 +1,7 @@
 ---
 title: "2025 02 26 Emac or Not Emac"
 date: 2025-02-26T22:37:09+08:00
-draft: true
+draft: false
 ---
 In the last two posts, I wrote extensively about emacs. However, today I have come across [this post](https://diego.codes/post/back-to-writing/). I have learnt the term [.emacs Bankruptcy](https://www.emacswiki.org/emacs/DotEmacsBankruptcy). 
 
