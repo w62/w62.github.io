@@ -31,7 +31,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.128.0
+      HUGO_VERSION: 0.147.5
     steps:
       - name: Install Hugo CLI
         run: |
@@ -53,6 +53,7 @@ jobs:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
         run: |
+          sudo apt-get install -y asciidoctor
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
