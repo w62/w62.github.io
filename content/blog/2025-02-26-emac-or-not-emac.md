@@ -6,7 +6,6 @@ draft: false
 In the last two posts, I wrote extensively about emacs. However, today I have come across [this post](https://diego.codes/post/back-to-writing/). I have learnt the term [.emacs Bankruptcy](https://www.emacswiki.org/emacs/DotEmacsBankruptcy). 
 
 In his case, over the days, the configuration of his emacs is getting bigger and bigger that needs a reboot, or fall under its own weight. He also doubts that whether he needs the power of [org-mode](https://orgmode.org/).
-
 He repeatedly emphasizes that he likes emacs. At some point during last week, I even seriously thought about getting a 10-inch [chuwi](https://www.chuwi.com/product/items/chuwi-minibook-x-n150.html) just for emacs. My goals was to have a dedicated emacs "appliance" so that I can carry it anywhere. But nothing beats the wake-up speed, or snappiness, of a macbook. So I gave it up quickly.
 
 But 
@@ -27,3 +26,4 @@ I have even seriously looking for a trackpad that works with my hhkb, but soon I
 So here I am again, writing my blog post with VS Code in markdown.  There is one thing that org-mode does not have - [mermaid](https://mermaid.js.org/) which is very handy to present some basic diagrams.
 
 I am not taking any realms or sizes and I am open. I don't mind using or trying any text editors or tools. I just use the right tools for the right task. Hugo has native org-mode support as well as markdown. org-mode is powerful that markdown. But for me, I just want to write and jot down something quick and easy. Markdown serves me well yet org-mode is an overkill. So I just go back to markdown. As simple as that.
+
