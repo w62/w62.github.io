@@ -1,10 +1,7 @@
 ---
-title: "Content Placeholder"
+title: "NixOS Rust-for-Linux"
+date: 2026-10-14T01:52:09+8:00
 draft: false
-build:
-  render: never
-  list: never
-  publishResources: false
 ---
 
 Assuming you mean Rust-for-Linux (in-tree kernel modules), the usual workflow is a dev shell for the build plus QEMU for testing, rather than booting the kernel on your NixOS machine.
