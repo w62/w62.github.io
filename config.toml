@@ -1,5 +1,5 @@
 baseURL = 'https://blog.freepackets.net/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = "William's site"
 #theme = "ananke"
 #theme = "antora-default-ui-hugo-theme"
