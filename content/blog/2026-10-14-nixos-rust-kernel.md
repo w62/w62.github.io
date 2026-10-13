@@ -1,6 +1,6 @@
 ---
 title: "NixOS Rust-for-Linux"
-date: 2026-10-14T01:52:09+8:00
+date: 2026-10-14T01:52:09+08:00
 draft: false
 ---
 
