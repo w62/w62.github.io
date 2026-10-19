@@ -26,6 +26,18 @@ allow = ["^asciidoctor$", "^npx$"]
   [markup.highlight]
     # Disable Goldmark Chroma syntax highlighter
     codeFences = false
+[security]
+  allowContent = [
+    '^text/html$',
+    '^text/markdown$',
+    '^text/org$',
+    '^text/asciidoc$',
+    '^text/pandoc$',
+    '^text/rst$'
+  ]
+
+  [markup.goldmark.renderer]
+  unsafe = true
 
 [menu]
   [[menu.main]]
