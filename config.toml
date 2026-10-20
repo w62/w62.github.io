@@ -5,8 +5,9 @@ title = "William's site"
 #theme = "antora-default-ui-hugo-theme"
 #theme = "hugo-theme-relearn"
 #theme = "cupper-hugo-theme"
-theme = "smol"
+#theme = "smol"
 #theme = "bare"
+theme = "PaperMod"
 
 sectionPagesMenu = "main"
 

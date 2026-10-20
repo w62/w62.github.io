@@ -28,3 +28,6 @@
 [submodule "themes/bare"]
 	path = themes/bare
 	url = https://github.com/orf/bare-hugo-theme.git
+[submodule "themes/PaperMod"]
+	path = themes/PaperMod
+	url = https://github.com/adityatelange/hugo-PaperMod.git
