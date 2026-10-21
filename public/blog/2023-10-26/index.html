@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>The comma operator (almost made me have a coma to understand it.) | William&#39;s site</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="I tried to understand the comma operator. I have tried the following small program:
+
+    
+      Copy
+    
+    #include &lt;iostream&gt;
+
+int main ()
+{
+
+	int j = 0;
+	int k = 0;
+	j = 4,5;
+	k = (4,5);
+
+	std::cout &lt;&lt; &#34;j: &#34; &lt;&lt; j &lt;&lt; std::endl;
+	std::cout &lt;&lt; &#34;k: &#34; &lt;&lt; k &lt;&lt; std::endl;
+
+	return 0;
+}
+  The compiler does give some warnings, despite a little bit different:
+
+    
+      Copy
+    
+     warning: expression result unused [-Wunused-value]
+    8 |         j = 4,5;
+      |               ^
+
+ warning: left operand of comma operator has no effect [-Wunused-value]
+    9 |         k = (4,5);
+      |              ^     
+  and the result is:">
+    <meta name="generator" content="Hugo 0.168.0">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    <link rel="stylesheet" href="/ananke/css/main.css">
+    <script>
+  (function () {
+    "use strict";
+
+    
+    
+    function revealButtons() {
+      var buttons = document.querySelectorAll(".code-block .code-copy[hidden]");
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].hidden = false;
+      }
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", revealButtons);
+    } else {
+      revealButtons();
+    }
+
+    function flash(button) {
+      var label = button.querySelector(".code-copy-label");
+      var previous = label ? label.textContent : null;
+      button.classList.add("is-copied");
+      if (label) label.textContent = "Copied";
+      window.setTimeout(function () {
+        button.classList.remove("is-copied");
+        if (label && previous !== null) label.textContent = previous;
+      }, 2000);
+    }
+
+    function legacyCopy(text) {
+      var area = document.createElement("textarea");
+      area.value = text;
+      area.setAttribute("readonly", "");
+      area.style.position = "absolute";
+      area.style.left = "-9999px";
+      document.body.appendChild(area);
+      area.select();
+      var ok = false;
+      try {
+        ok = document.execCommand("copy");
+      } catch (e) {
+        ok = false;
+      }
+      document.body.removeChild(area);
+      return ok;
+    }
+
+    function copyFrom(button) {
+      var container = button.closest(".code-block");
+      if (!container) return;
+      var pre = container.querySelector("pre");
+      if (!pre) return;
+      var source = pre.querySelector("code") || pre;
+      var text = source.innerText;
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(
+          function () { flash(button); },
+          function () { if (legacyCopy(text)) flash(button); }
+        );
+      } else if (legacyCopy(text)) {
+        flash(button);
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var button = event.target.closest(".code-copy");
+      if (button) copyFrom(button);
+    });
+  })();
+</script>
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/blog/2023-10-26/">
+    
+
+    
+    
+    <meta property="og:url" content="http://localhost:1313/blog/2023-10-26/">
+	<meta property="og:site_name" content="William&#39;s site">
+	<meta property="og:title" content="The comma operator (almost made me have a coma to understand it.)">
+	<meta property="og:description" content="I tried to understand the comma operator. I have tried the following small program:
+Copy #include &lt;iostream&gt; int main () { int j = 0; int k = 0; j = 4,5; k = (4,5); std::cout &lt;&lt; &#34;j: &#34; &lt;&lt; j &lt;&lt; std::endl; std::cout &lt;&lt; &#34;k: &#34; &lt;&lt; k &lt;&lt; std::endl; return 0; } The compiler does give some warnings, despite a little bit different:
+Copy warning: expression result unused [-Wunused-value] 8 | j = 4,5; | ^ warning: left operand of comma operator has no effect [-Wunused-value] 9 | k = (4,5); | ^ and the result is:">
+	<meta property="og:locale" content="en_us">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="blog">
+		<meta property="article:published_time" content="2023-10-26T11:37:37+08:00">
+		<meta property="article:modified_time" content="2023-10-26T11:37:37+08:00">
+
+	<meta itemprop="name" content="The comma operator (almost made me have a coma to understand it.)">
+	<meta itemprop="description" content="I tried to understand the comma operator. I have tried the following small program:
+Copy #include &lt;iostream&gt; int main () { int j = 0; int k = 0; j = 4,5; k = (4,5); std::cout &lt;&lt; &#34;j: &#34; &lt;&lt; j &lt;&lt; std::endl; std::cout &lt;&lt; &#34;k: &#34; &lt;&lt; k &lt;&lt; std::endl; return 0; } The compiler does give some warnings, despite a little bit different:
+Copy warning: expression result unused [-Wunused-value] 8 | j = 4,5; | ^ warning: left operand of comma operator has no effect [-Wunused-value] 9 | k = (4,5); | ^ and the result is:">
+	<meta itemprop="datePublished" content="2023-10-26T11:37:37+08:00">
+	<meta itemprop="dateModified" content="2023-10-26T11:37:37+08:00">
+	<meta itemprop="wordCount" content="321">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="The comma operator (almost made me have a coma to understand it.)">
+	<meta name="twitter:description" content="I tried to understand the comma operator. I have tried the following small program:
+Copy #include &lt;iostream&gt; int main () { int j = 0; int k = 0; j = 4,5; k = (4,5); std::cout &lt;&lt; &#34;j: &#34; &lt;&lt; j &lt;&lt; std::endl; std::cout &lt;&lt; &#34;k: &#34; &lt;&lt; k &lt;&lt; std::endl; return 0; } The compiler does give some warnings, despite a little bit different:
+Copy warning: expression result unused [-Wunused-value] 8 | j = 4,5; | ^ warning: left operand of comma operator has no effect [-Wunused-value] 9 | k = (4,5); | ^ and the result is:">
+
+	
+  </head><body class="ma0 avenir bg-near-white development is-page is-page page-2023-10-26">
+   
+  
+
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        William&#39;s site
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/blog/" title="my blog page">
+              my blog
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/about/" title="about page">
+              about
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+<main class="pb7" role="main">
+  
+
+  <article class="page-2023-10-26 flex-l mw7 center ph3 flex-wrap justify-between">
+    <header class="mt4 w-100"><aside class="instapaper_ignoref b helvetica tracked ttu">
+    <a class="link dim" href="http://localhost:1313/blog/">Blogs</a>
+  </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1">The comma operator (almost made me have a coma to understand it.)</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2023-10-26T11:37:37+08:00">October 26, 2023</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-100-l"><p>I tried to understand the comma operator. I have tried the following small program:</p>
+<div class="code-block">
+    <button class="code-copy" type="button" hidden aria-label="Copy code to clipboard">
+      <span class="code-copy-label" aria-hidden="true">Copy</span>
+    </button>
+    <pre tabindex="0"><code>#include &lt;iostream&gt;
+
+int main ()
+{
+
+	int j = 0;
+	int k = 0;
+	j = 4,5;
+	k = (4,5);
+
+	std::cout &lt;&lt; &#34;j: &#34; &lt;&lt; j &lt;&lt; std::endl;
+	std::cout &lt;&lt; &#34;k: &#34; &lt;&lt; k &lt;&lt; std::endl;
+
+	return 0;
+}</code></pre>
+  </div><p>The compiler does give some warnings, despite a little bit different:</p>
+<div class="code-block">
+    <button class="code-copy" type="button" hidden aria-label="Copy code to clipboard">
+      <span class="code-copy-label" aria-hidden="true">Copy</span>
+    </button>
+    <pre tabindex="0"><code> warning: expression result unused [-Wunused-value]
+    8 |         j = 4,5;
+      |               ^
+
+ warning: left operand of comma operator has no effect [-Wunused-value]
+    9 |         k = (4,5);
+      |              ^     </code></pre>
+  </div><p>and the result is:</p>
+<div class="code-block">
+    <button class="code-copy" type="button" hidden aria-label="Copy code to clipboard">
+      <span class="code-copy-label" aria-hidden="true">Copy</span>
+    </button>
+    <pre tabindex="0"><code>j: 4
+k: 5</code></pre>
+  </div><p>That is strange.</p>
+<p>My initial understanding of the comma operator is that it</p>
+<ul>
+<li>returns the value of the expression at the right</li>
+<li>is the operator with the lowest precedence</li>
+</ul>
+<p>After some googling and asking around in reddit, I ended up finding a <a href="https://stackoverflow.com/questions/54142/how-does-the-comma-operator-work-and-what-precedence-does-it-have">good explantion</a> of it.</p>
+<p>The key mistake is that I have missed the second point. The comma operator has the
+lowest precedence - that means it is lower than the assignment operator. That is
+to say,</p>
+<div class="code-block">
+    <button class="code-copy" type="button" hidden aria-label="Copy code to clipboard">
+      <span class="code-copy-label" aria-hidden="true">Copy</span>
+    </button>
+    <pre tabindex="0"><code>j = 4,5;</code></pre>
+  </div><p>is equivalent to</p>
+<div class="code-block">
+    <button class="code-copy" type="button" hidden aria-label="Copy code to clipboard">
+      <span class="code-copy-label" aria-hidden="true">Copy</span>
+    </button>
+    <pre tabindex="0"><code>(j = 4), 5;</code></pre>
+  </div><p>C++ first gives the value <code>4</code> to the named variable <code>j</code>.  Then the comma operator comes into work
+and evaluate both expressions around it and return the value at his right.</p>
+<p>Most of the time, assignment is the last thing happened. So my initial focus is on the
+comma operator and the brackets around it. So my muscle memory excludes the assignment operator
+in property 2 of the comma operator. So the complete sentance should be:</p>
+<div class="code-block">
+    <button class="code-copy" type="button" hidden aria-label="Copy code to clipboard">
+      <span class="code-copy-label" aria-hidden="true">Copy</span>
+    </button>
+    <pre tabindex="0"><code>Comma operator has the lowest precedence - including the assignment operator</code></pre>
+  </div><p>Then everything makes sense.</p>
+<p>This is a small lesson or use case from what I have learned from<a href="https://a.co/d/5GHBiaI">Think Again</a></p>
+<p>A little spinoff during my little research on the comma operator, is that I have
+come to know <a href="https://en.wikipedia.org/wiki/Sequence_point">Sequence point</a>.</p>
+<ul class="pa0">
+  
+</ul><ul class="pa0">
+  
+</ul>
+
+      
+    </div></article>
+</main><footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="http://localhost:1313/" >
+    &copy;  william 2026 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

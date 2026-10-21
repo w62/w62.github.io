@@ -19,6 +19,9 @@ postcss = true
 [security.exec]
 allow = ["^asciidoctor$", "^npx$"]
 
+[params.ananke]
+copy_code = true
+
 [markup]
   [markup.asciidocext]
     [markup.asciidocext.attributes]
@@ -26,7 +29,7 @@ allow = ["^asciidoctor$", "^npx$"]
       "source-highlighter" = "highlightjs"
   [markup.highlight]
     # Disable Goldmark Chroma syntax highlighter
-    codeFences = false
+#    codeFences = false
 [security]
   allowContent = [
     '^text/html$',

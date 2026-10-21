@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Rust network programming materials | William&#39;s site</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="1. Sockets and async (start here)
+
+std::net (TcpListener, TcpStream) for blocking basics.
+Tokio for real work. Its official tutorial (tokio.rs/tokio/tutorial) builds a mini-Redis server and client, which covers framing, shared state, and graceful shutdown.
+tokio-util codecs (Framed, LengthDelimitedCodec) for protocol framing, and the bytes crate for buffers.
+socket2 when you need options std doesn&rsquo;t expose (SO_REUSEPORT, keepalive tuning, buffer sizes, TCP_NODELAY variants). mio if you want the epoll layer under Tokio.
+
+2. Packets and raw access">
+    <meta name="generator" content="Hugo 0.168.0">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    <link rel="stylesheet" href="/ananke/css/main.css">
+    <script>
+  (function () {
+    "use strict";
+
+    
+    
+    function revealButtons() {
+      var buttons = document.querySelectorAll(".code-block .code-copy[hidden]");
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].hidden = false;
+      }
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", revealButtons);
+    } else {
+      revealButtons();
+    }
+
+    function flash(button) {
+      var label = button.querySelector(".code-copy-label");
+      var previous = label ? label.textContent : null;
+      button.classList.add("is-copied");
+      if (label) label.textContent = "Copied";
+      window.setTimeout(function () {
+        button.classList.remove("is-copied");
+        if (label && previous !== null) label.textContent = previous;
+      }, 2000);
+    }
+
+    function legacyCopy(text) {
+      var area = document.createElement("textarea");
+      area.value = text;
+      area.setAttribute("readonly", "");
+      area.style.position = "absolute";
+      area.style.left = "-9999px";
+      document.body.appendChild(area);
+      area.select();
+      var ok = false;
+      try {
+        ok = document.execCommand("copy");
+      } catch (e) {
+        ok = false;
+      }
+      document.body.removeChild(area);
+      return ok;
+    }
+
+    function copyFrom(button) {
+      var container = button.closest(".code-block");
+      if (!container) return;
+      var pre = container.querySelector("pre");
+      if (!pre) return;
+      var source = pre.querySelector("code") || pre;
+      var text = source.innerText;
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(
+          function () { flash(button); },
+          function () { if (legacyCopy(text)) flash(button); }
+        );
+      } else if (legacyCopy(text)) {
+        flash(button);
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var button = event.target.closest(".code-copy");
+      if (button) copyFrom(button);
+    });
+  })();
+</script>
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/blog/2026-10-19-rust/">
+    
+
+    
+    
+    <meta property="og:url" content="http://localhost:1313/blog/2026-10-19-rust/">
+	<meta property="og:site_name" content="William&#39;s site">
+	<meta property="og:title" content="Rust network programming materials">
+	<meta property="og:description" content="1. Sockets and async (start here)
+std::net (TcpListener, TcpStream) for blocking basics. Tokio for real work. Its official tutorial (tokio.rs/tokio/tutorial) builds a mini-Redis server and client, which covers framing, shared state, and graceful shutdown. tokio-util codecs (Framed, LengthDelimitedCodec) for protocol framing, and the bytes crate for buffers. socket2 when you need options std doesn’t expose (SO_REUSEPORT, keepalive tuning, buffer sizes, TCP_NODELAY variants). mio if you want the epoll layer under Tokio. 2. Packets and raw access">
+	<meta property="og:locale" content="en_us">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="blog">
+		<meta property="article:published_time" content="2026-10-19T23:32:54+08:00">
+		<meta property="article:modified_time" content="2026-10-19T23:32:54+08:00">
+
+	<meta itemprop="name" content="Rust network programming materials">
+	<meta itemprop="description" content="1. Sockets and async (start here)
+std::net (TcpListener, TcpStream) for blocking basics. Tokio for real work. Its official tutorial (tokio.rs/tokio/tutorial) builds a mini-Redis server and client, which covers framing, shared state, and graceful shutdown. tokio-util codecs (Framed, LengthDelimitedCodec) for protocol framing, and the bytes crate for buffers. socket2 when you need options std doesn’t expose (SO_REUSEPORT, keepalive tuning, buffer sizes, TCP_NODELAY variants). mio if you want the epoll layer under Tokio. 2. Packets and raw access">
+	<meta itemprop="datePublished" content="2026-10-19T23:32:54+08:00">
+	<meta itemprop="dateModified" content="2026-10-19T23:32:54+08:00">
+	<meta itemprop="wordCount" content="303">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Rust network programming materials">
+	<meta name="twitter:description" content="1. Sockets and async (start here)
+std::net (TcpListener, TcpStream) for blocking basics. Tokio for real work. Its official tutorial (tokio.rs/tokio/tutorial) builds a mini-Redis server and client, which covers framing, shared state, and graceful shutdown. tokio-util codecs (Framed, LengthDelimitedCodec) for protocol framing, and the bytes crate for buffers. socket2 when you need options std doesn’t expose (SO_REUSEPORT, keepalive tuning, buffer sizes, TCP_NODELAY variants). mio if you want the epoll layer under Tokio. 2. Packets and raw access">
+
+	
+  </head><body class="ma0 avenir bg-near-white development is-page is-page page-2026-10-19-rust">
+   
+  
+
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        William&#39;s site
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/blog/" title="my blog page">
+              my blog
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/about/" title="about page">
+              about
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+<main class="pb7" role="main">
+  
+
+  <article class="page-2026-10-19-rust flex-l mw7 center ph3 flex-wrap justify-between">
+    <header class="mt4 w-100"><aside class="instapaper_ignoref b helvetica tracked ttu">
+    <a class="link dim" href="http://localhost:1313/blog/">Blogs</a>
+  </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1">Rust network programming materials</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2026-10-19T23:32:54+08:00">October 19, 2026</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-100-l"><p><strong>1. Sockets and async (start here)</strong></p>
+<ul>
+<li><code>std::net</code> (<code>TcpListener</code>, <code>TcpStream</code>) for blocking basics.</li>
+<li><strong>Tokio</strong> for real work. Its official tutorial (tokio.rs/tokio/tutorial) builds a mini-Redis server and client, which covers framing, shared state, and graceful shutdown.</li>
+<li><code>tokio-util</code> codecs (<code>Framed</code>, <code>LengthDelimitedCodec</code>) for protocol framing, and the <code>bytes</code> crate for buffers.</li>
+<li><strong>socket2</strong> when you need options <code>std</code> doesn&rsquo;t expose (<code>SO_REUSEPORT</code>, keepalive tuning, buffer sizes, <code>TCP_NODELAY</code> variants). <strong>mio</strong> if you want the epoll layer under Tokio.</li>
+</ul>
+<p><strong>2. Packets and raw access</strong></p>
+<ul>
+<li><code>pnet</code> for raw sockets and packet parsing and building.</li>
+<li><code>etherparse</code> for fast, zero-copy header parsing.</li>
+<li>The <code>pcap</code> crate (libpcap bindings) or <code>pcap-file</code> for capture and replay.</li>
+<li><code>tun-tap</code> or the <code>tun</code> crate for virtual interfaces. On Linux, use these with <code>ip tuntap</code> for safe experiments.</li>
+</ul>
+<p><strong>3. Implementing TCP/IP yourself</strong></p>
+<ul>
+<li><a href="https://github.com/smoltcp-rs/smoltcp"><strong>smoltcp</strong></a> is a standalone, <code>no_std</code>-friendly TCP/IP stack and the best code to read. It&rsquo;s small enough to follow.</li>
+<li>Jon Gjengset&rsquo;s <a href="https://youtu.be/bzja9fQWzdA?si=b4bRzVf1Ri24WE9l">&ldquo;Implementing TCP in Rust&rdquo; </a>live-stream series on YouTube builds TCP over a TUN device from scratch. It&rsquo;s long but excellent.</li>
+<li><em>Rust in Action</em> (McNamara) has a networking chapter that builds a stack over a TAP device.</li>
+</ul>
+<p><strong>4. Protocol theory (language-agnostic)</strong></p>
+<ul>
+<li><em>TCP/IP Illustrated, Vol. 1</em> (Stevens/Fall) is still the reference for how TCP actually behaves.</li>
+<li>RFCs 9293 (TCP), 791 (IP), and 793 for history.</li>
+<li>Beej&rsquo;s Guide to Network Programming. It&rsquo;s written for C, but the socket concepts map directly.</li>
+</ul>
+<p><strong>Practical tips</strong></p>
+<ul>
+<li>Start with an echo server, then a chat server, then a protocol with real framing.</li>
+<li>Test with <code>ncat</code>, <code>tcpdump</code>, and Wireshark so you see what&rsquo;s on the wire. <code>tc netem</code> simulates loss and delay.</li>
+<li>Newer stacks like <a href="https://en.wikipedia.org/wiki/QUIC">QUIC</a> (<a href="https://quinn-rs.github.io/quinn/"><code>quinn</code></a>) are worth a look once TCP makes sense.</li>
+</ul>
+<p>Crate APIs shift between versions, so check docs.rs for current signatures. Tell me which direction you want (a server, packet tooling, or your own stack) and I can sketch a starter project.</p>
+<ul class="pa0">
+  
+</ul><ul class="pa0">
+  
+</ul>
+
+      
+    </div></article>
+</main><footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="http://localhost:1313/" >
+    &copy;  william 2026 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -7,7 +7,8 @@ draft: false
 Assuming you mean Rust-for-Linux (in-tree kernel modules), the usual workflow is a dev shell for the build plus QEMU for testing, rather than booting the kernel on your NixOS machine.
 
 **1. Dev shell** (`shell.nix`, channels-style):
-
+```
+```
 ```nix
 { pkgs ? import <nixpkgs> {} }:
 pkgs.mkShell {

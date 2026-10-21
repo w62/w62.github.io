@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title> A list of C&#43;&#43; topics | William&#39;s site</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="In Jason Turner&rsquo;s C&#43;&#43; Weekly Ep 348, he listed out an extensive C&#43;&#43; topics. Understanding these topics makes equips you with expert level C&#43;&#43; knowledge. BUT DOES NOT make you in C&#43;&#43; (programming). The entire video is about building a lambda function, from simple to complex, and different versions.
+Here is list of topics:
+
+lambdas (C&#43;&#43;11)
+struct (C&#43;&#43;98)
+constexpr (C&#43;&#43;11)
+operator overloading (C&#43;&#43;98)
+call operator (C&#43;&#43;98)
+const member functions (C&#43;&#43;98)
+braced initialization (C&#43;&#43;11)
+auto return type deduction (C&#43;&#43;14)
+&ldquo;compiler magic&rdquo; at 3:33 he says &ldquo;because inside our the call operator overload we cannot see the *this pointer of the lambda&rdquo;
+function parameters (C&#43;&#43;98)
+pass-by-value (C&#43;&#43;98)
+attributes on parameters (C&#43;&#43;11) e.g. [[maybe_unsed]]
+pass-by-reference (C&#43;&#43;98)
+pass-by-value vs pass-by-reference (C&#43;&#43;98)
+pre-increment vs post-increment
+trailing return types (C&#43;&#43;11)
+class vs struct (C&#43;&#43;98)
+private vs public (C&#43;&#43;98)
+implicit conversions (C&#43;&#43;98)
+function pointers (C&#43;&#43;98)
+static member functions (C&#43;&#43;98)
+using aliases (C&#43;&#43;11)
+efficiency when chaining functions, 6:35 generic lambdas (C&#43;&#43;14)
+templates (C&#43;&#43;98)
+template argument type deduction (C&#43;&#43;98)
+aias templates (C&#43;&#43;11)
+template instantiations (C&#43;&#43;98)
+noexcept (C&#43;&#43;11)
+noexcept in the type system (C&#43;&#43;17)
+variadic templates (C&#43;&#43;11)
+variadic lambdas (C&#43;&#43;14)
+fold expressions (C&#43;&#43;17)
+function attributes (C&#43;&#43;11)
+concepts (C&#43;&#43;20) 8:47 to constrain the lambdas
+non-type template parameters (C&#43;&#43;98)
+integer sequences (C&#43;&#43;11)
+template parameter pattern matching (C&#43;&#43;98)
+explicit lambda templates (C&#43;&#43;17)
+tuples (C&#43;&#43;11)
+unpacking of tuples (C&#43;&#43;11)
+variadic sizeof...() operator (C&#43;&#43;11)
+direct-initialization of members (C&#43;&#43;11)
+mutable keyword (C&#43;&#43;98)
+non-const member functions (C&#43;&#43;98)
+reference members (C&#43;&#43;98)
+member copies (C&#43;&#43;98)
+object layout (C&#43;&#43;98)
+member padding (C&#43;&#43;98)
+order of construction/destruction (C&#43;&#43;98)
+generalized lambda capture (C&#43;&#43;14)
+immediately invoked lambdas (C&#43;&#43;11)
+return value optimization (C&#43;&#43;98)
+guaranteed return value optimization (C&#43;&#43;17)
+initializer_list (C&#43;&#43;11)
+recursive lambda (C&#43;&#43;23)
+deducing this (C&#43;&#43;23)
+recursive functions
+trivially copyable types (C&#43;&#43;98)
+higher order functions
+dangling references
+undefined behavior 16:10 overloaded lambdas
+inheritance (C&#43;&#43;98)
+multiple inheritance (C&#43;&#43;98)
+function hiding (C&#43;&#43;98)
+variadic using declarations (C&#43;&#43;17)
+scoping / lookup rules (C&#43;&#43;98)
+class template argument deduction (C&#43;&#43;17/C&#43;&#43;20)
+deduction guides (C&#43;&#43;17)
+algorithms (C&#43;&#43;11)
+ranges (C&#43;&#43;20)
+&lt;functional&gt; (C&#43;&#43;11)
+virtual member functions (C&#43;&#43;98)
+member function pointers (C&#43;&#43;98)
+special member functions (C&#43;&#43;98/11)
+member function call syntax (C&#43;&#43;98)
+type erasure (C&#43;&#43;98)
+dynamic vs automatic storage (C&#43;&#43;98)
+
+Missing
+
+writing your own concepts?
+type traits?
+operator &lt;=&gt;?
+protected?
+virtual inheritance
+compilation model
+ODR violations
+preprocessor
+project structure and layout
+the breadth of the standard library
+variable templates
+coroutines
+modules
+
+From the comments of an user @darkmagic543, there are additional topics:">
+    <meta name="generator" content="Hugo 0.168.0">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    <link rel="stylesheet" href="/ananke/css/main.css">
+    <script>
+  (function () {
+    "use strict";
+
+    
+    
+    function revealButtons() {
+      var buttons = document.querySelectorAll(".code-block .code-copy[hidden]");
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].hidden = false;
+      }
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", revealButtons);
+    } else {
+      revealButtons();
+    }
+
+    function flash(button) {
+      var label = button.querySelector(".code-copy-label");
+      var previous = label ? label.textContent : null;
+      button.classList.add("is-copied");
+      if (label) label.textContent = "Copied";
+      window.setTimeout(function () {
+        button.classList.remove("is-copied");
+        if (label && previous !== null) label.textContent = previous;
+      }, 2000);
+    }
+
+    function legacyCopy(text) {
+      var area = document.createElement("textarea");
+      area.value = text;
+      area.setAttribute("readonly", "");
+      area.style.position = "absolute";
+      area.style.left = "-9999px";
+      document.body.appendChild(area);
+      area.select();
+      var ok = false;
+      try {
+        ok = document.execCommand("copy");
+      } catch (e) {
+        ok = false;
+      }
+      document.body.removeChild(area);
+      return ok;
+    }
+
+    function copyFrom(button) {
+      var container = button.closest(".code-block");
+      if (!container) return;
+      var pre = container.querySelector("pre");
+      if (!pre) return;
+      var source = pre.querySelector("code") || pre;
+      var text = source.innerText;
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(
+          function () { flash(button); },
+          function () { if (legacyCopy(text)) flash(button); }
+        );
+      } else if (legacyCopy(text)) {
+        flash(button);
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var button = event.target.closest(".code-copy");
+      if (button) copyFrom(button);
+    });
+  })();
+</script>
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/blog/2023-10-30/">
+    
+
+    
+    
+    <meta property="og:url" content="http://localhost:1313/blog/2023-10-30/">
+	<meta property="og:site_name" content="William&#39;s site">
+	<meta property="og:title" content=" A list of C&#43;&#43; topics">
+	<meta property="og:description" content="In Jason Turner’s C&#43;&#43; Weekly Ep 348, he listed out an extensive C&#43;&#43; topics. Understanding these topics makes equips you with expert level C&#43;&#43; knowledge. BUT DOES NOT make you in C&#43;&#43; (programming). The entire video is about building a lambda function, from simple to complex, and different versions.
+Here is list of topics:
+lambdas (C&#43;&#43;11) struct (C&#43;&#43;98) constexpr (C&#43;&#43;11) operator overloading (C&#43;&#43;98) call operator (C&#43;&#43;98) const member functions (C&#43;&#43;98) braced initialization (C&#43;&#43;11) auto return type deduction (C&#43;&#43;14) “compiler magic” at 3:33 he says “because inside our the call operator overload we cannot see the *this pointer of the lambda” function parameters (C&#43;&#43;98) pass-by-value (C&#43;&#43;98) attributes on parameters (C&#43;&#43;11) e.g. [[maybe_unsed]] pass-by-reference (C&#43;&#43;98) pass-by-value vs pass-by-reference (C&#43;&#43;98) pre-increment vs post-increment trailing return types (C&#43;&#43;11) class vs struct (C&#43;&#43;98) private vs public (C&#43;&#43;98) implicit conversions (C&#43;&#43;98) function pointers (C&#43;&#43;98) static member functions (C&#43;&#43;98) using aliases (C&#43;&#43;11) efficiency when chaining functions, 6:35 generic lambdas (C&#43;&#43;14) templates (C&#43;&#43;98) template argument type deduction (C&#43;&#43;98) aias templates (C&#43;&#43;11) template instantiations (C&#43;&#43;98) noexcept (C&#43;&#43;11) noexcept in the type system (C&#43;&#43;17) variadic templates (C&#43;&#43;11) variadic lambdas (C&#43;&#43;14) fold expressions (C&#43;&#43;17) function attributes (C&#43;&#43;11) concepts (C&#43;&#43;20) 8:47 to constrain the lambdas non-type template parameters (C&#43;&#43;98) integer sequences (C&#43;&#43;11) template parameter pattern matching (C&#43;&#43;98) explicit lambda templates (C&#43;&#43;17) tuples (C&#43;&#43;11) unpacking of tuples (C&#43;&#43;11) variadic sizeof...() operator (C&#43;&#43;11) direct-initialization of members (C&#43;&#43;11) mutable keyword (C&#43;&#43;98) non-const member functions (C&#43;&#43;98) reference members (C&#43;&#43;98) member copies (C&#43;&#43;98) object layout (C&#43;&#43;98) member padding (C&#43;&#43;98) order of construction/destruction (C&#43;&#43;98) generalized lambda capture (C&#43;&#43;14) immediately invoked lambdas (C&#43;&#43;11) return value optimization (C&#43;&#43;98) guaranteed return value optimization (C&#43;&#43;17) initializer_list (C&#43;&#43;11) recursive lambda (C&#43;&#43;23) deducing this (C&#43;&#43;23) recursive functions trivially copyable types (C&#43;&#43;98) higher order functions dangling references undefined behavior 16:10 overloaded lambdas inheritance (C&#43;&#43;98) multiple inheritance (C&#43;&#43;98) function hiding (C&#43;&#43;98) variadic using declarations (C&#43;&#43;17) scoping / lookup rules (C&#43;&#43;98) class template argument deduction (C&#43;&#43;17/C&#43;&#43;20) deduction guides (C&#43;&#43;17) algorithms (C&#43;&#43;11) ranges (C&#43;&#43;20) &lt;functional&gt; (C&#43;&#43;11) virtual member functions (C&#43;&#43;98) member function pointers (C&#43;&#43;98) special member functions (C&#43;&#43;98/11) member function call syntax (C&#43;&#43;98) type erasure (C&#43;&#43;98) dynamic vs automatic storage (C&#43;&#43;98) Missing writing your own concepts? type traits? operator &lt;=&gt;? protected? virtual inheritance compilation model ODR violations preprocessor project structure and layout the breadth of the standard library variable templates coroutines modules From the comments of an user @darkmagic543, there are additional topics:">
+	<meta property="og:locale" content="en_us">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="blog">
+		<meta property="article:published_time" content="2023-10-30T16:07:09+08:00">
+		<meta property="article:modified_time" content="2023-10-30T16:07:09+08:00">
+
+	<meta itemprop="name" content=" A list of C&#43;&#43; topics">
+	<meta itemprop="description" content="In Jason Turner’s C&#43;&#43; Weekly Ep 348, he listed out an extensive C&#43;&#43; topics. Understanding these topics makes equips you with expert level C&#43;&#43; knowledge. BUT DOES NOT make you in C&#43;&#43; (programming). The entire video is about building a lambda function, from simple to complex, and different versions.
+Here is list of topics:
+lambdas (C&#43;&#43;11) struct (C&#43;&#43;98) constexpr (C&#43;&#43;11) operator overloading (C&#43;&#43;98) call operator (C&#43;&#43;98) const member functions (C&#43;&#43;98) braced initialization (C&#43;&#43;11) auto return type deduction (C&#43;&#43;14) “compiler magic” at 3:33 he says “because inside our the call operator overload we cannot see the *this pointer of the lambda” function parameters (C&#43;&#43;98) pass-by-value (C&#43;&#43;98) attributes on parameters (C&#43;&#43;11) e.g. [[maybe_unsed]] pass-by-reference (C&#43;&#43;98) pass-by-value vs pass-by-reference (C&#43;&#43;98) pre-increment vs post-increment trailing return types (C&#43;&#43;11) class vs struct (C&#43;&#43;98) private vs public (C&#43;&#43;98) implicit conversions (C&#43;&#43;98) function pointers (C&#43;&#43;98) static member functions (C&#43;&#43;98) using aliases (C&#43;&#43;11) efficiency when chaining functions, 6:35 generic lambdas (C&#43;&#43;14) templates (C&#43;&#43;98) template argument type deduction (C&#43;&#43;98) aias templates (C&#43;&#43;11) template instantiations (C&#43;&#43;98) noexcept (C&#43;&#43;11) noexcept in the type system (C&#43;&#43;17) variadic templates (C&#43;&#43;11) variadic lambdas (C&#43;&#43;14) fold expressions (C&#43;&#43;17) function attributes (C&#43;&#43;11) concepts (C&#43;&#43;20) 8:47 to constrain the lambdas non-type template parameters (C&#43;&#43;98) integer sequences (C&#43;&#43;11) template parameter pattern matching (C&#43;&#43;98) explicit lambda templates (C&#43;&#43;17) tuples (C&#43;&#43;11) unpacking of tuples (C&#43;&#43;11) variadic sizeof...() operator (C&#43;&#43;11) direct-initialization of members (C&#43;&#43;11) mutable keyword (C&#43;&#43;98) non-const member functions (C&#43;&#43;98) reference members (C&#43;&#43;98) member copies (C&#43;&#43;98) object layout (C&#43;&#43;98) member padding (C&#43;&#43;98) order of construction/destruction (C&#43;&#43;98) generalized lambda capture (C&#43;&#43;14) immediately invoked lambdas (C&#43;&#43;11) return value optimization (C&#43;&#43;98) guaranteed return value optimization (C&#43;&#43;17) initializer_list (C&#43;&#43;11) recursive lambda (C&#43;&#43;23) deducing this (C&#43;&#43;23) recursive functions trivially copyable types (C&#43;&#43;98) higher order functions dangling references undefined behavior 16:10 overloaded lambdas inheritance (C&#43;&#43;98) multiple inheritance (C&#43;&#43;98) function hiding (C&#43;&#43;98) variadic using declarations (C&#43;&#43;17) scoping / lookup rules (C&#43;&#43;98) class template argument deduction (C&#43;&#43;17/C&#43;&#43;20) deduction guides (C&#43;&#43;17) algorithms (C&#43;&#43;11) ranges (C&#43;&#43;20) &lt;functional&gt; (C&#43;&#43;11) virtual member functions (C&#43;&#43;98) member function pointers (C&#43;&#43;98) special member functions (C&#43;&#43;98/11) member function call syntax (C&#43;&#43;98) type erasure (C&#43;&#43;98) dynamic vs automatic storage (C&#43;&#43;98) Missing writing your own concepts? type traits? operator &lt;=&gt;? protected? virtual inheritance compilation model ODR violations preprocessor project structure and layout the breadth of the standard library variable templates coroutines modules From the comments of an user @darkmagic543, there are additional topics:">
+	<meta itemprop="datePublished" content="2023-10-30T16:07:09+08:00">
+	<meta itemprop="dateModified" content="2023-10-30T16:07:09+08:00">
+	<meta itemprop="wordCount" content="516">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content=" A list of C&#43;&#43; topics">
+	<meta name="twitter:description" content="In Jason Turner’s C&#43;&#43; Weekly Ep 348, he listed out an extensive C&#43;&#43; topics. Understanding these topics makes equips you with expert level C&#43;&#43; knowledge. BUT DOES NOT make you in C&#43;&#43; (programming). The entire video is about building a lambda function, from simple to complex, and different versions.
+Here is list of topics:
+lambdas (C&#43;&#43;11) struct (C&#43;&#43;98) constexpr (C&#43;&#43;11) operator overloading (C&#43;&#43;98) call operator (C&#43;&#43;98) const member functions (C&#43;&#43;98) braced initialization (C&#43;&#43;11) auto return type deduction (C&#43;&#43;14) “compiler magic” at 3:33 he says “because inside our the call operator overload we cannot see the *this pointer of the lambda” function parameters (C&#43;&#43;98) pass-by-value (C&#43;&#43;98) attributes on parameters (C&#43;&#43;11) e.g. [[maybe_unsed]] pass-by-reference (C&#43;&#43;98) pass-by-value vs pass-by-reference (C&#43;&#43;98) pre-increment vs post-increment trailing return types (C&#43;&#43;11) class vs struct (C&#43;&#43;98) private vs public (C&#43;&#43;98) implicit conversions (C&#43;&#43;98) function pointers (C&#43;&#43;98) static member functions (C&#43;&#43;98) using aliases (C&#43;&#43;11) efficiency when chaining functions, 6:35 generic lambdas (C&#43;&#43;14) templates (C&#43;&#43;98) template argument type deduction (C&#43;&#43;98) aias templates (C&#43;&#43;11) template instantiations (C&#43;&#43;98) noexcept (C&#43;&#43;11) noexcept in the type system (C&#43;&#43;17) variadic templates (C&#43;&#43;11) variadic lambdas (C&#43;&#43;14) fold expressions (C&#43;&#43;17) function attributes (C&#43;&#43;11) concepts (C&#43;&#43;20) 8:47 to constrain the lambdas non-type template parameters (C&#43;&#43;98) integer sequences (C&#43;&#43;11) template parameter pattern matching (C&#43;&#43;98) explicit lambda templates (C&#43;&#43;17) tuples (C&#43;&#43;11) unpacking of tuples (C&#43;&#43;11) variadic sizeof...() operator (C&#43;&#43;11) direct-initialization of members (C&#43;&#43;11) mutable keyword (C&#43;&#43;98) non-const member functions (C&#43;&#43;98) reference members (C&#43;&#43;98) member copies (C&#43;&#43;98) object layout (C&#43;&#43;98) member padding (C&#43;&#43;98) order of construction/destruction (C&#43;&#43;98) generalized lambda capture (C&#43;&#43;14) immediately invoked lambdas (C&#43;&#43;11) return value optimization (C&#43;&#43;98) guaranteed return value optimization (C&#43;&#43;17) initializer_list (C&#43;&#43;11) recursive lambda (C&#43;&#43;23) deducing this (C&#43;&#43;23) recursive functions trivially copyable types (C&#43;&#43;98) higher order functions dangling references undefined behavior 16:10 overloaded lambdas inheritance (C&#43;&#43;98) multiple inheritance (C&#43;&#43;98) function hiding (C&#43;&#43;98) variadic using declarations (C&#43;&#43;17) scoping / lookup rules (C&#43;&#43;98) class template argument deduction (C&#43;&#43;17/C&#43;&#43;20) deduction guides (C&#43;&#43;17) algorithms (C&#43;&#43;11) ranges (C&#43;&#43;20) &lt;functional&gt; (C&#43;&#43;11) virtual member functions (C&#43;&#43;98) member function pointers (C&#43;&#43;98) special member functions (C&#43;&#43;98/11) member function call syntax (C&#43;&#43;98) type erasure (C&#43;&#43;98) dynamic vs automatic storage (C&#43;&#43;98) Missing writing your own concepts? type traits? operator &lt;=&gt;? protected? virtual inheritance compilation model ODR violations preprocessor project structure and layout the breadth of the standard library variable templates coroutines modules From the comments of an user @darkmagic543, there are additional topics:">
+
+	
+  </head><body class="ma0 avenir bg-near-white development is-page is-page page-2023-10-30">
+   
+  
+
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        William&#39;s site
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/blog/" title="my blog page">
+              my blog
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/about/" title="about page">
+              about
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+<main class="pb7" role="main">
+  
+
+  <article class="page-2023-10-30 flex-l mw7 center ph3 flex-wrap justify-between">
+    <header class="mt4 w-100"><aside class="instapaper_ignoref b helvetica tracked ttu">
+    <a class="link dim" href="http://localhost:1313/blog/">Blogs</a>
+  </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1"> A list of C&#43;&#43; topics</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2023-10-30T16:07:09+08:00">October 30, 2023</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-100-l"><p>In <a href="https://www.youtube.com/watch?v=VpqwCDSfgz0">Jason Turner&rsquo;s C++ Weekly Ep 348</a>, he listed out an extensive C++ topics. Understanding these topics makes equips you with expert level C++ knowledge. <strong>BUT DOES NOT</strong> make you in C++ (programming). The entire video is about building a lambda function, from simple to complex, and different versions.</p>
+<p>Here is list of topics:</p>
+<ol>
+<li>lambdas (C++11)</li>
+<li>struct (C++98)</li>
+<li>constexpr (C++11)</li>
+<li>operator overloading (C++98)</li>
+<li>call operator (C++98)</li>
+<li>const member functions (C++98)</li>
+<li>braced initialization (C++11)</li>
+<li><code>auto</code> return type deduction (C++14)</li>
+<li>&ldquo;compiler magic&rdquo; at 3:33 he says &ldquo;because inside our the call operator overload we cannot see the <code>*this</code> pointer of the lambda&rdquo;</li>
+<li>function parameters (C++98)</li>
+<li>pass-by-value (C++98)</li>
+<li>attributes on parameters (C++11) e.g. <code>[[maybe_unsed]]</code></li>
+<li>pass-by-reference (C++98)</li>
+<li>pass-by-value vs pass-by-reference (C++98)</li>
+<li>pre-increment vs post-increment</li>
+<li>trailing return types (C++11)</li>
+<li>class vs struct (C++98)</li>
+<li>private vs public (C++98)</li>
+<li>implicit conversions (C++98)</li>
+<li>function pointers (C++98)</li>
+<li>static member functions (C++98)</li>
+<li>using aliases (C++11)</li>
+<li>efficiency when chaining functions, 6:35 generic lambdas (C++14)</li>
+<li>templates (C++98)</li>
+<li>template argument type deduction (C++98)</li>
+<li>aias templates (C++11)</li>
+<li>template instantiations (C++98)</li>
+<li><code>noexcept</code> (C++11)</li>
+<li><code>noexcept</code> in the type system (C++17)</li>
+<li>variadic templates (C++11)</li>
+<li>variadic lambdas (C++14)</li>
+<li>fold expressions (C++17)</li>
+<li>function attributes (C++11)</li>
+<li>concepts (C++20) 8:47 to constrain the lambdas</li>
+<li>non-type template parameters (C++98)</li>
+<li>integer sequences (C++11)</li>
+<li>template parameter pattern matching (C++98)</li>
+<li>explicit lambda templates (C++17)</li>
+<li>tuples (C++11)</li>
+<li>unpacking of tuples (C++11)</li>
+<li>variadic <code>sizeof...()</code> operator (C++11)</li>
+<li>direct-initialization of members (C++11)</li>
+<li><code>mutable</code> keyword (C++98)</li>
+<li>non-<code>const</code> member functions (C++98)</li>
+<li>reference members (C++98)</li>
+<li>member copies (C++98)</li>
+<li>object layout (C++98)</li>
+<li>member padding (C++98)</li>
+<li>order of construction/destruction (C++98)</li>
+<li>generalized lambda capture (C++14)</li>
+<li>immediately invoked lambdas (C++11)</li>
+<li>return value optimization (C++98)</li>
+<li>guaranteed return value optimization (C++17)</li>
+<li>initializer_list (C++11)</li>
+<li>recursive lambda (C++23)</li>
+<li>deducing <code>this</code> (C++23)</li>
+<li>recursive functions</li>
+<li>trivially copyable types (C++98)</li>
+<li>higher order functions</li>
+<li>dangling references</li>
+<li>undefined behavior 16:10 overloaded lambdas</li>
+<li>inheritance (C++98)</li>
+<li>multiple inheritance (C++98)</li>
+<li>function hiding (C++98)</li>
+<li>variadic <code>using</code> declarations (C++17)</li>
+<li>scoping / lookup rules (C++98)</li>
+<li>class template argument deduction (C++17/C++20)</li>
+<li>deduction guides (C++17)</li>
+<li>algorithms (C++11)</li>
+<li>ranges (C++20)</li>
+<li><code>&lt;functional&gt;</code> (C++11)</li>
+<li>virtual member functions (C++98)</li>
+<li>member function pointers (C++98)</li>
+<li>special member functions (C++98/11)</li>
+<li>member function call syntax (C++98)</li>
+<li>type erasure (C++98)</li>
+<li>dynamic vs automatic storage (C++98)</li>
+<li></li>
+<li>Missing</li>
+<li></li>
+<li>writing your own concepts?</li>
+<li>type traits?</li>
+<li>operator &lt;=&gt;?</li>
+<li>protected?</li>
+<li>virtual inheritance</li>
+<li>compilation model</li>
+<li>ODR violations</li>
+<li>preprocessor</li>
+<li>project structure and layout</li>
+<li>the breadth of the standard library</li>
+<li>variable templates</li>
+<li>coroutines</li>
+<li>modules</li>
+</ol>
+<p>From the comments of an user @darkmagic543, there are additional topics:</p>
+<ol>
+<li>exceptions, catch ellipse</li>
+<li>structured binding</li>
+<li>forward declaration</li>
+<li>namespaces</li>
+<li>rules of 5, default and nontrivial/virtual destructors</li>
+<li>memory, pointers and smart pointers</li>
+<li>iterators and writing your own iterator</li>
+<li>multithreading</li>
+<li>numeric</li>
+<li>explicit/implicit conversions</li>
+<li>castings, slicing</li>
+<li>variant &amp; visitor</li>
+<li>abstract class (pure virtual), delete, final // default as well?</li>
+<li>consteval</li>
+<li>packages &amp; libraries, cmake</li>
+<li>signed/unsigned arithmetic, bitwise operations, bitset</li>
+</ol>
+<p>That is quite a list of topics.Jason has concluded at the end of the video, &ldquo;and hopefully you can use this as a starting point for getting that expert levels C++ knowledge that you&rsquo;ve been looking for&rdquo;. This is what I am trying to achieve.</p>
+<p>I know some of these topics, but it is my goal to know them all. I will use this as a check list of the progression of my C++ learning journey.</p>
+<ul class="pa0">
+  
+</ul><ul class="pa0">
+  
+</ul>
+
+      
+    </div></article>
+</main><footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="http://localhost:1313/" >
+    &copy;  william 2026 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
